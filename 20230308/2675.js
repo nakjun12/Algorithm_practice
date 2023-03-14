@@ -19,6 +19,7 @@ for (let i = 0; i < input.length; i++) {
     z++ // 문자수만큼 돌림
   )
     answer = answer + word[z].repeat(result[0]); //문자 반복해서 넣어줌
+  console.log(result[0]);
   final.push(answer); // 배열에 넣기
 }
 
