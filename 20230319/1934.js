@@ -15,6 +15,7 @@ for (let i of input) {
     });
   let small = NumArray[0];
   let big = NumArray[1];
+
   while (big % small !== 0) {
     let rest = big % small;
     big = small;
