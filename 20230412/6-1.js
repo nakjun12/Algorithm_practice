@@ -4,9 +4,8 @@ const input = require("fs")
   .trim()
   .split("\n"); //  .split(/\s+/)
 const log = console.log;
-log(input);
+
 let check = true;
-let answer = "YES";
 stack = [];
 for (let x of input[0]) {
   if (x === "(") stack.push(x);
