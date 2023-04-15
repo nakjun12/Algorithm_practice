@@ -17,3 +17,4 @@ for (let i = 0; i < numArray.length - 1; i++) {
 console.log(numArray);
 
 //선택 정렬
+// [Solved✌🏻]낙준_선택정렬
