@@ -7,6 +7,7 @@ for (let i = 0; i < numArray.length - 1; i++) {
   let idx = i;
   for (let j = i + 1; j < numArray.length; j++) {
     if (numArray[idx] > numArray[j]) {
+      console.log(idx, j);
       idx = j;
     }
   }
