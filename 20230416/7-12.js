@@ -29,9 +29,10 @@ function checking(arr, mid) {
 
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] - ef >= mid) {
+      //텀이 더 클때는 넣어줘야함
       cnt++;
       ef = arr[i];
-    }
+    } //작을때는 흘려보낸다.
   }
 
   return cnt;

@@ -21,6 +21,7 @@ T_arr.sort((a, b) => {
   else return a[0] - b[0];
 });
 let cnt = 0;
+console.log(T_arr[0], T_arr[1], T_arr[2], T_arr[3]);
 
 for (let el of T_arr) {
   if (el[1] === "s") cnt++;
