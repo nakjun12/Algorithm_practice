@@ -45,6 +45,7 @@ function updateDistance(s, t, answer) {
     } else {
       p++;
     }
+
     if (direction === 1) {
       answer.push(p);
     } else {
