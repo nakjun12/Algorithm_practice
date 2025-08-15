@@ -12,5 +12,8 @@
       "module": "commonjs",
       "target": "es2020"
     }
+  },
+  "dependencies": {
+    "es-toolkit": "^1.39.9"
   }
 }
