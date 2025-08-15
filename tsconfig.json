@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // 최신 JavaScript 기능 사용 가능
+    "module": "CommonJS", // Node.js 환경의 표준 모듈 시스템
+    "moduleResolution": "node", // Node.js 방식으로 모듈 해석
+    "resolveJsonModule": true, // json 파일 import 가능하게 설정
+    "outDir": "./dist", // 컴파일된 JS 파일이 생성될 디렉터리
+    "esModuleInterop": true, // CommonJS 모듈을 ES 모듈처럼 가져올 수 있게 함
+    "forceConsistentCasingInFileNames": true, // 파일 이름의 대소문자 구분 강제
+
+    "strict": true, // 모든 엄격한 타입 검사 옵션 활성화
+    "noImplicitReturns": true, // 함수에서 모든 경로가 값을 리턴하지 않으면 에러 발생
+
+    /* 배열/객체 안전성 강화 옵션들 */
+    "noUncheckedIndexedAccess": true, // 배열[index] 접근 시 undefined 가능성 검사
+    "exactOptionalPropertyTypes": true, // 선택적 속성에 undefined 명시적으로 할당 금지
+
+    /* 추가 안전성 검사 */
+    "noImplicitAny": true, // any 타입 암시적 사용 금지
+    "strictNullChecks": true, // null과 undefined 엄격 검사
+    "noUnusedLocals": true, // 사용하지 않는 지역 변수 검사
+    "noUnusedParameters": true, // 사용하지 않는 매개변수 검사
+    "noFallthroughCasesInSwitch": true, // switch문에서 break 없는 case 검
+    /* 기타 */
+    "skipLibCheck": true // 라이브러리(*.d.ts)의 타입 검사 건너뛰기 (컴파일 속도 향상)
+  }
+}
