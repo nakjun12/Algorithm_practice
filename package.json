@@ -1,6 +1,9 @@
 {
-  "name": "Algorithm_practice",
+  "name": "algorithm_practice",
   "version": "1.0.0",
+  "scripts": {
+    "baekjoon": "ts-node script/create-baekjoon.ts"
+  },
   "devDependencies": {
     "@types/node": "^24.2.1",
     "ts-node": "^10.9.2",
