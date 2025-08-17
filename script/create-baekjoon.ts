@@ -21,14 +21,15 @@ function createDateBasedPath(): string {
  * @returns TypeScript 코드 템플릿 문자열
  */
 function createTypeScriptTemplate(problemNumber: string): string {
-  return `function solve${problemNumber}() {
+  return `
+  const filePath = process.platform === "linux" ? "/dev/stdin" : __dirname + "/${problemNumber}.txt";
+  function solve${problemNumber}() {
   const input: string[] = require("fs")
-    .readFileSync(__dirname + "/${problemNumber}.txt")
+    .readFileSync(filePath)
     .toString()
     .trim()
     .split("\\n");
   
-  // 문제 풀이 로직 작성
   
 }
 
@@ -121,7 +122,6 @@ function handleCommandLineArgs(): void {
     // 명령행에서 문제 번호가 제공된 경우
     if (!/^\d+$/.test(problemNumber)) {
       console.error(`❌ '${problemNumber}'는 유효한 숫자가 아닙니다.`);
-      console.log("💡 사용법: npm run new <문제번호>");
       process.exit(1);
     }
 
