@@ -2,7 +2,8 @@
   "name": "algorithm_practice",
   "version": "1.0.0",
   "scripts": {
-    "baekjoon": "ts-node script/create-baekjoon.ts"
+    "baekjoon": "ts-node script/create-baekjoon.ts",
+    "leetcode": "ts-node script/create-leetcode.ts"
   },
   "devDependencies": {
     "@types/node": "^24.2.1",
